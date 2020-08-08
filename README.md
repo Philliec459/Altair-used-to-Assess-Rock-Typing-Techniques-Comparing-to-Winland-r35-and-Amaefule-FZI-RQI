@@ -1,6 +1,8 @@
 # Interrogate Petrophysical data using Python's Interactive Altair
 The objective of this project is to interrogate Petrophysical core data using python's interacive Altair. 
 
+Download the RosettaStone_GitHub_brief.html file to demonstrate the interactivity before loading Altair on your system and running the Jupyter Notebook.  
+
 ### Data:
 
 Clerke's Rosetta Stone Arab-D carbonate data(1) is used as the source data for our Pandas dataframe. Permeability (and log10 of perm lPerm) and Porosity are the routine core analysis data that we are using as a roadmap to interrogate our data. This is a very unique carbonate dataset in that Clerke masterfully randomly selected these data starting from 1,000's of inspected core plug samples that was were later culled down to the final samples in this set. This dataset covers the full range in poro-perm space for the Arab-D carbonate.  We also employ the Petrophysical Rock types (PRTs) developed by Clerke and compare this to Windland's r35 and Amaefule's FZI. 
