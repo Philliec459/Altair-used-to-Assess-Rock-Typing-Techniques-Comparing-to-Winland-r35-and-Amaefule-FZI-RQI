@@ -27,7 +27,7 @@ After all the Thomeer parameters were assigned to all the samples, then Ed used 
 
 Most macro rock typically has a dual porosity system where the Pore Throat Distribution (PTD) will have two modes as shown below. 
 
-![Mode.png](attachment:Mode.png)
+![Mode.png](Mode.png)
 
 The macro portion of the rock will have a mode greater than 2 microns with a second (or third) mode less than 2 microns. Probably the most abundant PRT is the M_1. This is a macro-porous rock with a mode in the macro portion of the PTD and a second mode in the meso-porosity range. In this PRT both the macro pores and meso-porous grains can have oil saturations once the capillary pressure is great enough to drive out the water. The M_2 PRT is also a macro rock, but the second pore system is micro-porous and is too tight to have hydrocarbon saturations. The Table below shows Clerke's description of his PRT's. 
 
