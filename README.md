@@ -5,7 +5,11 @@ Download the RosettaStone_GitHub_brief.html file to demonstrate the interactivit
 
 ### Data:
 
-Clerke's Rosetta Stone Arab-D carbonate data(1) is used as the source data for our Pandas dataframe. Permeability (and log10 of perm lPerm) and Porosity are the routine core analysis data that we are using as a roadmap to interrogate our data. This is a very unique carbonate dataset in that Clerke masterfully randomly selected these data starting from 1,000's of inspected core plug samples that was were later culled down to the final samples in this set. This dataset covers the full range in poro-perm space for the Arab-D carbonate.  We also employ the Petrophysical Rock types (PRTs) developed by Clerke and compare this to Windland's r35 and Amaefule's FZI. 
+Clerke's Rosetta Stone Arab-D carbonate data(1) is show below in the display of our data. This is Core analysis data. The Permeability (and log10 of perm lPerm) and Porosity are from the routine core analysis data. Clerke masterfully selected this dataset starting from thousands of qualified, inspected plug samples where the final samples were randomly selected from the group to create a very unique in that covers the full range in poro-perm space and Petrophysical Rock Types (PRTs). 
+
+High Pressure Mercury Injection (HPMI) was performed on each of the core plug samples too. The HPMI data was fit to the Thomeer hyperbolas for each pore system giving us the Thomeer parameters Pd, G and Bulk Volume Occupied for each pore system found in the plug sample.
+
+
 
 
 
@@ -13,18 +17,21 @@ Clerke's Rosetta Stone Arab-D carbonate data(1) is used as the source data for o
 
 ### Thomeer Parameters and Petrophysical Rock Types:
 
-G1, Pd1 and BV1 are the Thomeer parameters for the most dominant porosity system. G2, Pd2 and BV2 are the Thomeer parameters for the second porosity system. The following image relates the Thomeer parameters to the Capillary Pressure Curve. The Thomeer parameters were established by fitting the Thomeer hyperbola to the High Pressure Mercury Injection data. Most of the samples were fit in Ed Clerke's Thomeer spreadsheet that has been widely distributed. We also used Matlab to determine the Thomeer parameters using optimization. 
+A Thomeer hyperbola is fit to the HPMI data by optimizing on the Thomeer Parameters G1, Pd1 and BV1 for the first pore system and G2, Pd2 and BV2 for the second. The following image relates the Thomeer hyperbola (dashed black line) to the Capillary Pressure Curve (solid red line). Ed Clerke used hist famous Thomeer Parameter spreadsheet with solver to determine the correct set of Thomeer parameters for each sample.  
 
 ![thomeer.png](thomeer.png)
 
-As observed from this dataset, most macro rock has a dual porosity system and on the Pore Throat Distribution you would have two modes; one mode has a Pore Throat radius > 2 microns. The second (or third) mode has a Pore Throat radius < 2 microns. As an example, the Petrophysical Rock Type (PRT) M_1 is a rock type as defined by Clerke. This is a macro rock with a second mode in the meso-porosity range where both pore systems can have oil saturations once the capillary pressure is great enough to drive out the water. A large portion of the Arab D has this M_1 PRT which has resulted in low water saturations and a unique pore system resulting in excellent oil recoveries. It just so happens that the meso-porous rock is preferentially water wet. When subject to a water flood, this rock spontaneously imbibes the water and expels to oil resulting in exceptional recoveries. The M_2 PRT is also a macro rock, but the second pore system is micro-porous and is too tight to have hydrocarbon saturations. 
-
-The Table below shows Clerke's description of his PRT's:  
-
+After all the Thomeer parameters were assigned to all the samples, then Ed used the distributions of the the Initial Displacement Pressure (Pd) to devise his Petrophysical Rock Types (PRT) scheme. 
 
 ![Rock-Types.png](Rock-Types.png)
 
-The following are some example plot results where the plots are all interactive using Altair:
+Most macro rock typically has a dual porosity system where the Pore Throat Distribution (PTD) will have two modes as shown below. 
+
+![Mode.png](attachment:Mode.png)
+
+The macro portion of the rock will have a mode greater than 2 microns with a second (or third) mode less than 2 microns. Probably the most abundant PRT is the M_1. This is a macro-porous rock with a mode in the macro portion of the PTD and a second mode in the meso-porosity range. In this PRT both the macro pores and meso-porous grains can have oil saturations once the capillary pressure is great enough to drive out the water. The M_2 PRT is also a macro rock, but the second pore system is micro-porous and is too tight to have hydrocarbon saturations. The Table below shows Clerke's description of his PRT's. 
+
+The following are some example results using Altair where the data in cross plots can be selected and then the appropriate data for those selected samples are shown in the bar charts below the cross plots. 
 
 ![Rosetta_altair.png](Rosetta_altair.png)
 
