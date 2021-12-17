@@ -33,7 +33,7 @@ The macro portion of the rock will have a mode greater than 2 microns with a sec
 
 The following are some example results using Altair where the data in cross plots can be selected and then the appropriate data for those selected samples are shown in the bar charts below the cross plots. 
 
-![Rosetta_altair.png](prt.gif)
+![Rosetta_altair.png](rock_typing_hist.gif)
 
 
 We are using Conda on a mac and Altair works fairly well in a jupyter notebook. To run as pure python program altair_viewer must also be used to render the images to a html web page. We are low on the learning curve with Altair finding new capabilities each day. Consider this repository an example of where we are today. 
